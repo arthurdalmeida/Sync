@@ -21,3 +21,17 @@ void station_init(struct station *station){
     pthread_cond_init(&station->carroChegou, NULL);
     pthread_cond_init(&station->todosSentados, NULL);
 }
+
+void station_wait_for_car(struct station *station){
+    station->mutex = 1;
+
+    station->esperando++;
+
+    if (station->assentosLivres == 0){
+        pthread_cond_wait(&station->carroChegou, &station->mutex);
+    }
+
+    station->esperando--;
+    station->assentosLivres--;
+    station->passageirosACaminho++;
+}
