@@ -2,15 +2,8 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
+#include <sync_car.h>
 
-typedef struct station{
-    pthread_mutex_t mutex;
-    pthread_cond_t carroChegou;
-    pthread_cond_t todosSentados;
-    int esperando;
-    int assentosLivres;
-    int passageirosACaminho;
-} station;
 
 void station_init(struct station *station){
     station->esperando = 0;
@@ -23,7 +16,7 @@ void station_init(struct station *station){
 }
 
 void station_wait_for_car(struct station *station){
-    station->mutex = 1;
+    pthread_mutex_lock(&station->mutex);
 
     station->esperando++;
 
