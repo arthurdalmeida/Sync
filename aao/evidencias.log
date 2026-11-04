@@ -59,3 +59,64 @@ Script started on 2026-11-04 15:00:25-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004lexit
 
 Script done on 2026-11-04 15:01:05-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-11-04 15:10:11-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="14"]
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ date
+[?2004lWed Nov  4 15:10:13 -03 2026
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ whoami
+[?2004larthuralmeida
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ pwd
+[?2004l/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ make
+[?2004lmake: 'sync_car' is up to date.
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ ./sync_car
+[?2004lcar entering station with 11 free seats
+Error: Failed to complete after 2 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [Some more complicated issue appears to have caused passengers not to board when given the opportunity]
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-04 15:10:40-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-11-04 15:21:35-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="22"]
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ date
+[?2004lWed Nov  4 15:21:37 -03 2026
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ whoami
+[?2004larthuralmeida
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ pwd
+[?2004l/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ make
+[?2004lcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ ./s[Ksync_car
+[?2004lcar entering station with 16 free seats
+Error: Failed to complete after 2 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [Some more complicated issue appears to have caused passengers not to board when given the opportunity]
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-04 15:22:05-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-11-04 16:26:37-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="27"]
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ date
+[?2004lWed Nov  4 16:26:40 -03 2026
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ whoami
+[?2004larthuralmeida
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ pwd
+[?2004l/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ make
+[?2004lmake: 'sync_car' is up to date.
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ ./sync_car
+[?2004lcar entering station with 24 free seats
+car departed station with 24 new passenger(s) (expected 24)
+car entering station with 14 free seats
+car departed station with 14 new passenger(s) (expected 14)
+car entering station with 30 free seats
+car departed station with 30 new passenger(s) (expected 30)
+car entering station with 15 free seats
+car departed station with 15 new passenger(s) (expected 15)
+car entering station with 28 free seats
+car departed station with 17 new passenger(s) (expected 17)
+Looks good!
+[?2004h]0;arthuralmeida@arthur: /mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[01;32marthuralmeida@arthur[00m:[01;34m/mnt/c/Users/almei/OneDrive/Desktop/Sync/Sync/aao[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-04 16:26:59-03:00 [COMMAND_EXIT_CODE="0"]
