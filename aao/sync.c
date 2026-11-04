@@ -35,3 +35,15 @@ void station_wait_for_car(struct station *station){
     station->assentosLivres--;
     station->passageirosACaminho++;
 }
+
+void station_on_board(struct station *station){
+    pthread_mutex_lock(&station->mutex);
+
+    while (station->todosSentados > 0){
+        pthread_cond_wait(&station->passageirosACaminho);
+    }
+
+    pthread_cond_signal(&station->todosSentados);
+
+    pthread_mutex_unlock(&station->mutex);
+}
