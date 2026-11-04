@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
-#include <sync_car.h>
+#include "sync_car.h"
 
 
 void station_init(struct station *station){
@@ -32,8 +32,8 @@ void station_wait_for_car(struct station *station){
 void station_on_board(struct station *station){
     pthread_mutex_lock(&station->mutex);
 
-    while (station->todosSentados > 0){
-        pthread_cond_wait(&station->passageirosACaminho);
+    while (station->passageirosACaminho > 0){
+        pthread_cond_wait(&station->todosSentados, &station->mutex);
     }
 
     pthread_cond_signal(&station->todosSentados);
@@ -48,7 +48,7 @@ void station_load_car(struct station *station, int cont){
 
     pthread_cond_broadcast(&station->carroChegou);
 
-    pthread_cond_wait(&station->todosSentados);
+    pthread_cond_wait(&station->todosSentados, &station->mutex);
 
     station->assentosLivres = 0;
 
